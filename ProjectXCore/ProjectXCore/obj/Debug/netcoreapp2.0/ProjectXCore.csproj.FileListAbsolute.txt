@@ -1,0 +1,11 @@
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\bin\Debug\netcoreapp2.0\ProjectXCore.deps.json
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\bin\Debug\netcoreapp2.0\ProjectXCore.runtimeconfig.json
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\bin\Debug\netcoreapp2.0\ProjectXCore.runtimeconfig.dev.json
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\bin\Debug\netcoreapp2.0\ProjectXCore.dll
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\obj\Debug\netcoreapp2.0\ProjectXCore.csprojResolveAssemblyReference.cache
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\obj\Debug\netcoreapp2.0\ProjectXCore.csproj.CoreCompileInputs.cache
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\obj\Debug\netcoreapp2.0\ProjectXCore.AssemblyInfoInputs.cache
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\obj\Debug\netcoreapp2.0\ProjectXCore.AssemblyInfo.cs
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\bin\Debug\netcoreapp2.0\ProjectXCore.pdb
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\obj\Debug\netcoreapp2.0\ProjectXCore.dll
+c:\users\mjribeiro\source\repos\ProjectXCore\ProjectXCore\obj\Debug\netcoreapp2.0\ProjectXCore.pdb
