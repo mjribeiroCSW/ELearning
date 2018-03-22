@@ -77,7 +77,7 @@ namespace ProjectXCore.Controllers
         [HttpPost("{id}/workers/{id2}",Name = "Post Worker on Project")]
         public IActionResult PostWorkerOnProject([FromRoute] int id, [FromRoute] int id2)
         {
-            return Ok();
+            return Ok("Added Worker {id2} to project {id} ");
         }
 
 
