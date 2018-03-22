@@ -15,6 +15,7 @@ namespace ProjectXCore.Repository
     {
         private readonly ProjectContext context;
        
+
         public ProjectRepository(ProjectContext context) : base(context)
         {
             this.context = context;
@@ -60,6 +61,17 @@ namespace ProjectXCore.Repository
             return context.Projects
                 .Where(x => x.Client.Id == id)
                 .ToList();
+        }
+
+        public void Update(Project project, Workers worker)
+        {
+            var New = new ProjectWorkers();
+            New.ProjectId = project.Id;
+            New.WorkerId = worker.Id;
+            New.Worker = worker;
+            New.Project = project;
+            context.ProjectWorkers.Add(New);
+            context.SaveChanges();
         }
     }
 }

@@ -11,5 +11,6 @@ namespace ProjectXCore.Repository
         ICollection<Project> GetAll();
         ICollection<Project> GetAllFromClient(int id);
         ProjectDTOAll GetPro(int id);
+        void Update(Project project, Workers worker);
     }
 }

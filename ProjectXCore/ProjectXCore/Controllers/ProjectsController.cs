@@ -16,10 +16,12 @@ namespace ProjectXCore.Controllers
     {
         private IProjectRepository repoProject;
         private IClientRepository repoClient;
-        public ProjectsController(IProjectRepository repoProject, IClientRepository repoClient)
+        private IRepository<Workers> repoWorker;
+        public ProjectsController(IProjectRepository repoProject, IClientRepository repoClient, IRepository<Workers> repoWorker)
         {
             this.repoProject = repoProject;
             this.repoClient = repoClient;
+            this.repoWorker = repoWorker;
         }
 
         // GET: api/projects
@@ -77,7 +79,20 @@ namespace ProjectXCore.Controllers
         [HttpPost("{id}/workers/{id2}",Name = "Post Worker on Project")]
         public IActionResult PostWorkerOnProject([FromRoute] int id, [FromRoute] int id2)
         {
-            return Ok("Added Worker {id2} to project {id} ");
+            var Project = repoProject.Get(id);
+            if (Project == null)
+            {
+                //return 404
+                return NotFound("project not found");
+            }
+            var Worker = repoWorker.Get(id2);
+            if (Worker == null)
+            {
+                //return 404
+                return NotFound("worker not found");
+            }
+            repoProject.Update(Project, Worker);
+            return Ok("Added Worker "+ Worker.Name +" to project " + Project.Name);
         }
 
 
